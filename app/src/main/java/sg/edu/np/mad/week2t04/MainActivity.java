@@ -53,15 +53,15 @@ public class MainActivity extends AppCompatActivity {
         Log.v(TITLE, "On Resume!");
 
         Button followButton = findViewById(R.id.button);
-        if (user.followed == false){
-            followButton.setText("Unfollowed");
+        if (user.followed == true){
+            followButton.setText("Unfollow");
         }
         followButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (user.followed == false){
                     user.followed = true;
-                    followButton.setText("Unfollowed");
+                    followButton.setText("Unfollow");
                     Toast.makeText(getApplicationContext(), "Followed", Toast.LENGTH_SHORT).show();
                     myDBHandler.updateUser(user);
                 }
