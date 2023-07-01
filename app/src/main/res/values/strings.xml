@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week2T04</string>
+    <string name="btn1">Follow</string>
+    <string name="btn2">Message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Group 1</string>
+</resources>
